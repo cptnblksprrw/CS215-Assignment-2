@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+
+.berkshire-swash-regular {
+  font-family: "Berkshire Swash", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+** {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7.5px 7.5px;
+  background-color: #ffffff;
+  color: rgb(255, 255, 255);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.site-name {
+  font-size: 1.5rem;
+  font-family: "Berkshire Swash", serif;
+  color: black;
+}
+
+.support-button {
+  background-color: blue;
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.support-button:hover {
+  background-color: #2c93e8;
+}
+
+.edit-button{
+  background-color: green;
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  transition: background-color 0.3s;
+}
+
+.edit-button:hover{
+  background-color:rgb(61, 209, 61);
+}
+
+.manage-button{
+  background-color: rgb(175, 175, 175);
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.manage-button:hover{
+  background-color: rgb(229, 229, 229);
+}
+
+
+
+.logout-button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  text-align: center;
+  margin-top: 90%; /* Pushes the button to the bottom */
+  transition: background-color 0.3s;
+}
+
+.logout-button:hover{
+  background-color: rgb(209, 209, 209);
+}
+
+main {
+  padding: 20px;
+}
+
+.three-columns {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr; /* Left and right column 1fr, middle column 2fr */
+  gap: 20px; /* Space between columns */
+  align-items: start; /* Align items at the top */
+}
+
+.left-column, .right-column {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile_picture{
+  max-width: 100px;
+  max-height: 100px;
+
+}
+
+.middle-column {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .three-columns {
+      grid-template-columns: 1fr; /* Stack columns on smaller screens */
+  }
+}
