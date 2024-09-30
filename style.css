@@ -22,7 +22,7 @@ header {
   align-items: center;
   padding: 7.5px 7.5px;
   background-color: #ffffff;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
 
 .logo-container {
@@ -88,8 +88,6 @@ header {
   background-color: rgb(229, 229, 229);
 }
 
-
-
 .logout-button {
   background-color: #333;
   color: white;
@@ -99,12 +97,98 @@ header {
   cursor: pointer;
   border-radius: 8px;
   text-align: center;
-  margin-top: 90%; /* Pushes the button to the bottom */
+  margin-top: 65%; /* Pushes the button to the bottom */
   transition: background-color 0.3s;
 }
 
 .logout-button:hover{
   background-color: rgb(209, 209, 209);
+}
+
+.signup-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  flex: 1; /* Take up available space */
+}
+
+.signup-form {
+  background-color: #f4f4f4;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px; /* Set a fixed width for the form */
+}
+
+.signup-form img{
+  width:15%;
+  height:15%;
+  display:block;
+  margin:auto;
+
+  text-align: center;
+}
+
+.signup-form h2 {
+  margin-bottom: 20px;
+  text-align: center; /* Center the title */
+}
+
+.signup-form label {
+  font-size: 1rem;
+  margin-bottom: 0px;
+  display: block;
+}
+
+.signup-form input {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.signup-form .signup-button {
+  margin-top: 25px;
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%; /* Full width button */
+}
+
+.login-button-container {
+  display: flex;
+  padding-left: 70%;
+  align-items: center;
+  justify-items: flex-end;/* Align the login button to the right */
+}
+
+.login-button {
+  background-color: #ff6b6b; /* Button background color */
+  color: white;
+  border: none;
+  padding: 10px 10px;
+  width: auto;
+  border-radius: 5px;
+  text-decoration: none; /* Remove underline */
+  font-size: 1rem;
+  cursor: pointer; /* Change cursor to pointer */
+  align-items: center;
+}
+
+.header-button .login-button {
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
 }
 
 main {
@@ -123,6 +207,13 @@ main {
   grid-template-columns: 1fr 2fr 1fr; /* Left and right column 1fr, middle column 2fr */
   gap: 20px; /* Space between columns */
   align-items: start; /* Align items at the top */
+}
+
+.main-page-layout{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 10px;
+  align-items: start;
 }
 
 .left-section {
@@ -147,6 +238,7 @@ main {
 
 .left-column{
   padding-top: 35px;
+  padding-bottom: 50px;
 }
 
 .middle-column {

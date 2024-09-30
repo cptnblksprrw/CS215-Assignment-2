@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Website Name</title>
+    <title>InkScript</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="icon.ico" type="image/x-icon">
   </head>
@@ -13,25 +13,21 @@
         <img src="image/logo.png" alt="Logo" class="logo" />
         <h1 class="site-name">InkScript</h1>
       </div>
-      <button class="support-button">Support</button>
+      <button class="support-button" onclick="location.href='create.html'">Create Post</button>
     </header>
 
     <main>
-      <section class="three-columns">
+      <section class="main-page-layout">
         <div class="left-column">
           <img src="image\Default_pfp.svg.png" alt="Profile Picture" class="profile_picture">
           <h2>Hello, User</h2>
           <button class="edit-button">Edit Profile</button>
           <button class="manage-button" onclick="window.location.href='manage.html'">Manage posts</button>
 
-          <button class="logout-button">Log Out</button>
+          <button class="logout-button" onclick="window.location.href='index.html'">Log Out</button>
         </div>
         <div class="middle-column">
           <h2>Main Content</h2>
-          <p>This is the main content area, and it takes up the most space.</p>
-        </div>
-        <div class="right-column">
-          <h2>Featured Posts</h2>
           <div class="posts-grid">
             <div class="post">
               <img
@@ -39,7 +35,7 @@
                 alt="Post Image"
                 class="post-thumbnail"
               />
-              <div class="post-info">
+              <div class="post-info" onclick="location.href='details.html';" style="cursor: pointer;">
                 <h3>Post Title 1</h3>
                 <p>By Author 1</p>
                 <img
@@ -56,7 +52,7 @@
                 alt="Post Image"
                 class="post-thumbnail"
               />
-              <div class="post-info">
+              <div class="post-info" onclick="location.href='details.html';" style="cursor: pointer;">
                 <h3>Post Title 2</h3>
                 <p>By Author 2</p>
                 <img
@@ -73,7 +69,7 @@
                 alt="Post Image"
                 class="post-thumbnail"
               />
-              <div class="post-info">
+              <div class="post-info" onclick="location.href='details.html';" style="cursor: pointer;">
                 <h3>Post Title 3</h3>
                 <p>By Author 3</p>
                 <img
@@ -90,7 +86,7 @@
                 alt="Post Image"
                 class="post-thumbnail"
               />
-              <div class="post-info">
+              <div class="post-info" onclick="location.href='details.html';" style="cursor: pointer;">
                 <h3>Post Title 4</h3>
                 <p>By Author 4</p>
                 <img
