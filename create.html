@@ -1,23 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>InkScript</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="icon.ico" type="image/x-icon" />
   </head>
   <body>
     <header>
-      <div class="logo-container">
+      <div class="logo-container" onclick="location.href='home.html';" style="cursor: pointer;">
         <img src="image/logo.png" alt="Logo" class="logo" />
         <h1 class="site-name">InkScript</h1>
       </div>
       <button class="support-button">Support</button>
     </header>
-    <main>
-        <h1>Welcome to My Website</h1>  
+    <main class="blog-container">
+      <div class="blog-form">
+        <h2>Blog Creation</h2>
+        <p>Give your blog a title, describe the blog and upload a descriptive image that easily highlights the subject matter. </p>
+        <form action="home.html">
+          <label for="blog-title">Blog Title</label>
+          <input
+            type="text"
+            id="blog-title"
+            name="blog-title"
+            placeholder="Enter blog title"
+            required
+          />
+
+          <label for="blog-content">Content</label>
+          <textarea
+            id="blog-content"
+            name="blog-content"
+            placeholder="Write your blog content here..."
+            required
+          ></textarea>
+
+          <label for="blog-image">Image</label>
+          <input
+            type="file"
+            id="blog-image"
+            name="blog-image"
+            accept="image/*"
+            required
+          />
+
+          <label for="tags">Tags (comma-separated)</label>
+          <input
+            type="text"
+            id="tags"
+            name="tags"
+            placeholder="Enter tags"
+            required
+          />
+
+          <button type="submit" class="submit-button">Publish Blog</button>
+        </form>
+      </div>
     </main>
   </body>
 </html>

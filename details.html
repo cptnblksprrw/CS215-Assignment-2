@@ -13,7 +13,7 @@
         <img src="image/logo.png" alt="Logo" class="logo" />
         <h1 class="site-name">InkScript</h1>
       </div>
-      <button class="support-button">Support</button>
+      <button class="create-button" onclick="location.href='create.html'">Create Post</button>
     </header>
 
     <main>
@@ -31,8 +31,93 @@
           <button class="logout-button">Log Out</button>
         </div>
         <div class="middle-column">
-          <h2>Main Content</h2>
-          <p>This is the main content area, and it takes up the most space.</p>
+          <div class="post">
+            <img
+              src="post-image3.jpg"
+              alt="Post Image"
+              class="post-thumbnail"
+            />
+            <div class="post-info">
+              <h3>Post Title 3</h3>
+              <h4>By Author 3</h4>
+              <img
+                src="author-profile3.jpg"
+                alt="Author Profile"
+                class="author-profile"
+              />
+            </div>
+            <p>Lorem Ipsum is simply dummy text of the printing 
+              and typesetting industry. Lorem Ipsum has been 
+              the industry's standard dummy text ever since the 
+              1500s, when an unknown printer took a galley of type 
+              and scrambled it to make a type specimen book. 
+              It has survived not only five centuries, but also 
+              the leap into electronic typesetting, remaining 
+              essentially unchanged. It was popularised in the
+               1960s with the release of Letraset sheets containing 
+               Lorem Ipsum passages, and more recently with desktop
+                publishing software like Aldus PageMaker including 
+                versions of Lorem Ipsum.</p>
+          </div>
+          <div class="comment-container">
+            <h2>Comments (3)</h2>
+            <div class="comment-form">
+              <h2>Leave a Comment</h2>
+              <form action="#" method="post" enctype="multipart/form-data"></form>
+  
+                  <label for="comment-text">Your Comment</label>
+                  <textarea id="comment-text" name="comment-text" placeholder="Write a new comment" ></textarea>
+                  <button type="submit" class="submit-comment">Post Comment</button>
+              </form>
+          </div>
+            <div class="comment">
+                <div class="comment-header">
+                    <img src="profile1.jpg" alt="Profile Picture" class="profile-pic">
+                    <div class="commenter-info">
+                        <span class="commenter-name">John Doe</span>
+                        <span class="comment-date">2 hours ago</span>
+                    </div>
+                </div>
+                <p class="comment-text">This is a great article! I learned a lot from it.</p>
+                <div class="vote-buttons">
+                    <button class="upvote-button">▲</button>
+                    <span class="vote-count">12</span>
+                    <button class="downvote-button">▼</button>
+                </div>
+            </div>
+    
+            <div class="comment">
+                <div class="comment-header">
+                    <img src="profile2.jpg" alt="Profile Picture" class="profile-pic">
+                    <div class="commenter-info">
+                        <span class="commenter-name">Jane Smith</span>
+                        <span class="comment-date">1 day ago</span>
+                    </div>
+                </div>
+                <p class="comment-text">I completely disagree with this perspective.</p>
+                <div class="vote-buttons">
+                    <button class="upvote-button">▲</button>
+                    <span class="vote-count">3</span>
+                    <button class="downvote-button">▼</button>
+                </div>
+            </div>
+    
+            <div class="comment">
+                <div class="comment-header">
+                    <img src="profile3.jpg" alt="Profile Picture" class="profile-pic">
+                    <div class="commenter-info">
+                        <span class="commenter-name">Alice Johnson</span>
+                        <span class="comment-date">3 days ago</span>
+                    </div>
+                </div>
+                <p class="comment-text">I found some interesting points here. Thanks for sharing!</p>
+                <div class="vote-buttons">
+                    <button class="upvote-button">▲</button>
+                    <span class="vote-count">5</span>
+                    <button class="downvote-button">▼</button>
+                </div>
+            </div>
+          </div>
         </div>
         <div class="right-column">
           <h2>Featured Posts</h2>

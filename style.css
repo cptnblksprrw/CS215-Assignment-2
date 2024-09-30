@@ -42,7 +42,7 @@ header {
   color: black;
 }
 
-.support-button {
+.create-button {
   background-color: blue;
   color: rgb(255, 255, 255);
   border: none;
@@ -53,8 +53,23 @@ header {
   transition: background-color 0.3s;
 }
 
-.support-button:hover {
+.create-button:hover {
   background-color: #2c93e8;
+}
+
+.support-button {
+  background-color: rgb(245, 208, 208);
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.support-button:hover {
+  background-color: #ff4a4a;
 }
 
 .edit-button{
@@ -97,7 +112,7 @@ header {
   cursor: pointer;
   border-radius: 8px;
   text-align: center;
-  margin-top: 65%; /* Pushes the button to the bottom */
+  margin-top: 65%;
   transition: background-color 0.3s;
 }
 
@@ -179,7 +194,13 @@ header {
   font-size: 1rem;
   cursor: pointer; /* Change cursor to pointer */
   align-items: center;
+  transition: background-color 0.5s;
 }
+
+login-button:hover{
+  background-color: rgb(255, 200, 200);
+}
+
 
 .header-button .login-button {
   background-color: #ff6b6b;
@@ -189,6 +210,22 @@ header {
   border-radius: 5px;
   text-decoration: none;
   font-size: 1rem;
+  transition: background-color 0.5s;
+}
+
+.header-button .login-button:hover{
+  background-color: rgb(255, 200, 200);
+}
+
+.apply-button {
+  background-color: #ff6b6b; /* Button background color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%; /* Full width button */
+  margin-top: 15px; /* Space above the button */
 }
 
 main {
@@ -314,6 +351,99 @@ main {
   text-decoration: underline;
 }
 
+.search-filter {
+  background-color: #f4f4f4;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px; /* Set a fixed width for the filter */
+}
+
+.search-filter h2 {
+  margin-bottom: 20px;
+  text-align: center; /* Center the title */
+}
+
+.search-filter input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.search-filter h3 {
+  margin: 15px 0 5px; /* Add some margin above and below the category title */
+}
+
+.search-filter label {
+  display: block; /* Display checkboxes in block format for better layout */
+  margin-bottom: 10px; /* Space between checkboxes */
+}
+
+/* Blog Container */
+.blog-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  flex: 1; /* Take up available space */
+}
+
+.blog-form {
+  background-color: #f4f4f4;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 400px; /* Set a fixed width for the form */
+}
+
+.blog-form h2 {
+  margin-bottom: 20px;
+  text-align: center; /* Center the title */
+}
+
+.blog-form label {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.blog-form input,
+.blog-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.blog-form textarea {
+  height: 150px; /* Set height for the textarea */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.blog-form input[type="file"] {
+  display: block; /* Display as block for better alignment */
+  margin-bottom: 15px;
+}
+
+.blog-form .submit-button {
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%; /* Full width button */
+  transition: background-color 0.5s;
+}
+
+.blog-form .submit-button:hover{
+  background-color: #07ce18;
+}
+
 .profile_picture{
   max-width: 100px;
   max-height: 100px;
@@ -329,6 +459,147 @@ main {
   flex-direction: column;
   align-items: center;
   text-align: center;
+}
+
+.post-info p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.post-info h4{
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.post p{
+  text-align: left;
+  text-indent: 25px;
+}
+
+.comment-container {
+  padding-top: 15px;
+  max-width: 600px; /* Max width for the comment section */
+  margin: 0 auto; /* Center the comment section */
+}
+
+/* Comment Style */
+.comment {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px; /* Space between comments */
+}
+
+/* Comment Header */
+.comment-header {
+  display: flex; /* Flexbox for alignment */
+  align-items: center; /* Center items vertically */
+}
+
+/* Comment Form Styles */
+.comment-form {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.comment-form h2 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.comment-form label {
+  visibility: hidden;
+}
+
+.comment-form input[type="text"],
+.comment-form textarea,
+.comment-form input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.comment-form textarea{
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 540px;
+  height: 100px;
+}
+
+.comment-form textarea {
+  height: 100px;
+}
+
+.submit-comment {
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%; /* Full width button */
+  font-size: 1rem;
+}
+
+.profile-pic {
+  width: 40px; /* Fixed width for profile picture */
+  height: 40px; /* Fixed height for profile picture */
+  border-radius: 50%; /* Circular profile picture */
+  margin-right: 10px; /* Space between picture and name */
+}
+
+.commenter-info {
+  display: flex;
+  flex-direction: column; /* Arrange name and date vertically */
+}
+
+.commenter-name {
+  font-weight: bold; /* Bold name */
+}
+
+.comment-date {
+  font-size: 0.9rem; /* Smaller font for date */
+  color: #888; /* Grey color for date */
+}
+
+/* Comment Text */
+.comment-text {
+  margin: 10px 0; /* Space around comment text */
+}
+
+/* Vote Buttons */
+.vote-buttons {
+  display: flex;
+  align-items: center; /* Center vertically */
+}
+
+.upvote-button {
+  background: none; /* No background */
+  border: none; /* No border */
+  color:green; 
+  font-size: 1.5rem; /* Larger font size for arrows */
+  cursor: pointer; /* Pointer cursor on hover */
+  margin: 0 5px; /* Space between buttons */
+}
+
+.downvote-button {
+  background: none; /* No background */
+  border: none; /* No border */
+  color: red; /* Blue color */
+  font-size: 1.5rem; /* Larger font size for arrows */
+  cursor: pointer; /* Pointer cursor on hover */
+  margin: 0 5px; /* Space between buttons */
+}
+
+.vote-count {
+  margin: 0 10px; /* Space around vote count */
+  font-weight: bold; /* Bold vote count */
 }
 
 .post-thumbnail {
@@ -350,10 +621,7 @@ main {
   margin-bottom: 5px;
 }
 
-.post-info p {
-  font-size: 0.9rem;
-  color: #555;
-}
+
 
 .author-profile {
   width: 40px;
