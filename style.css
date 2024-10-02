@@ -303,12 +303,13 @@ main {
 }
 
 .middle-column {
-  background-color: #fff;
+  background-color:#2c93e81d;
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 0;
+  padding-bottom: 20px;
+  padding-top: 20px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.54);
 }
 
 .right-section {
@@ -325,6 +326,28 @@ main {
   font-size: 1.5rem;
 }
 
+.friends-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Responsive grid with min width */
+  gap: 20px; /* Space between the boxes */
+}
+
+.friend{
+  margin: 5px;
+}
+
+.friend img{
+  width: 100px; /* Fixed width for profile picture */
+  height: 100px; /* Fixed height for profile picture */
+  border-radius: 50%; /* Circular profile picture */
+  margin-right: 10px; /* Space between picture and name */
+  margin-left: 15px;
+  object-fit: cover;
+}
+
+.friend h4{
+  text-align: center;
+}
 /* Grid layout for posts */
 .posts-grid {
   display: grid;
@@ -456,7 +479,7 @@ main {
 }
 
 .blog-form .submit-button {
-  background-color: #ff6b6b;
+  background-color: rgba(33, 81, 236, 1);
   color: white;
   border: none;
   padding: 10px 20px;
@@ -490,6 +513,12 @@ main {
   grid-template-columns: 1fr 2fr; /* Left and right column 1fr, middle column 2fr */
   gap:20px; /* Space between columns */
   align-items: start; 
+}
+
+.post-info h1{
+  margin-top: 0;
+  margin-left: 20px;
+  font-size: 3em;
 }
 
 .post-info h3 {
